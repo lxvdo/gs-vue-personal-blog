@@ -33,6 +33,7 @@ query {
         title
         timeToRead
         description
+        path
         date (format: "D MMMM YYYY")
         tags {
           id

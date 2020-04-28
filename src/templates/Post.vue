@@ -9,10 +9,7 @@
     <g-image v-if="$page.post.image" :src="$page.post.image"></g-image>
     <div class="post-content" v-html="$page.post.content" />
     <div class="post-comments">
-      <vue-disqus
-        shortname="DISQUSSHORTNAME"
-        :identifier="$page.post.title"
-      ></vue-disqus>
+      <vue-disqus shortname="lxvdo" :identifier="$page.post.title"></vue-disqus>
     </div>
   </Layout>
 </template>
