@@ -7,10 +7,8 @@
 
       <g-link class="nav__link" to="/about/">About</g-link>
       <g-link class="nav__link" to="/posts/">Posts</g-link>
-
-      <!-- <ClientOnly> </ClientOnly> -->
     </div>
-    <ToggleTheme />
+    <!--<ClientOnly><ToggleTheme /></ClientOnly>-->
   </header>
 </template>
 
