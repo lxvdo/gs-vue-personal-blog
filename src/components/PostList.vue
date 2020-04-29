@@ -1,13 +1,15 @@
 <template>
   <div class="post-list">
-    <hr class="line" />
-    <p class="date" v-html="post.date" />
-    <h1 class="title">{{ post.title }}</h1>
-    <PostTags :post="post" />
-    <p class="description">{{ post.description }}</p>
-
-    <b> {{ post.timeToRead }} min read </b> &nbsp;
-    <g-link :to="post.path" class="read">Read More here...</g-link>
+    <!-- <hr class="line" />
+    <p class="date" v-html="post.date" />-->
+    <g-link :to="post.path" class="read">
+      <h1 class="title">{{ post.title }}</h1>
+      <p class="description">{{ post.description }}</p>
+    </g-link>
+    <div>
+      <p class="tags">{{ post.timeToRead }} min read</p>
+      <PostTags class="tags" :post="post" />
+    </div>
   </div>
 </template>
 
@@ -16,10 +18,18 @@ import PostTags from "~/components/PostTags";
 
 export default {
   components: {
-    PostTags,
+    PostTags
   },
-  props: ["post"],
+  props: ["post"]
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.tags {
+  /* z-index: 1; */
+  display: inline-block;
+  margin-right: 2em;
+  /* position: relative; */
+  /* float: left; */
+}
+</style>

@@ -7,6 +7,7 @@
 module.exports = {
   siteName: "LXVDO | Alex van Domburg",
   siteDescription: "Alex van Domburg, A simple blog designed with Gridsome",
+  icon: "src/assets/site_icon.png",
   templates: {
     Tag: "/tag/:id",
   },

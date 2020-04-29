@@ -2,11 +2,7 @@
   <Layout>
     <h1>Posts</h1>
     <section class="posts">
-      <PostList
-        v-for="edge in $page.allPost.edges"
-        :key="edge.node.id"
-        :post="edge.node"
-      />
+      <PostList v-for="edge in $page.allPost.edges" :key="edge.node.id" :post="edge.node" />
     </section>
   </Layout>
 </template>
@@ -15,17 +11,17 @@
 import PostList from "@/components/PostList.vue";
 export default {
   components: {
-    PostList,
+    PostList
   },
   metaInfo: {
-    title: "",
-  },
+    title: "Posts"
+  }
 };
 </script>
 
 <page-query>
 query {
-  allPost {
+  allPost(filter: { draft: { ne: true}}) {
     totalCount
     edges {
       node {
@@ -35,7 +31,7 @@ query {
         description
         path
         date (format: "D MMMM YYYY")
-        tags {
+        tags(sortBy: "title", order: ASC) {
           id
           title
           path

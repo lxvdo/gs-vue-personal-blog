@@ -2,12 +2,12 @@
   <div class="layout">
     <Header />
     <slot />
-    <div class="footer">
+    <!-- <div class="footer">
       <p>
         Built with
         <a class="link" href="//gridsome.org">Gridsome</a>
       </p>
-    </div>
+    </div>-->
   </div>
 </template>
 
@@ -15,8 +15,8 @@
 import Header from "./partials/Header.vue";
 export default {
   components: {
-    Header,
-  },
+    Header
+  }
 };
 </script>
 
@@ -50,8 +50,18 @@ body {
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 60px;
 }
 
+a {
+  text-decoration: none;
+}
+a:link {
+  color: var(--app-font-color);
+}
+a:visited {
+  color: var(--app-font-color);
+}
 /* .footer {
   position: fixed;
   bottom: 0;

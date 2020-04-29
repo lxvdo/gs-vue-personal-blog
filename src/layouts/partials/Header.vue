@@ -1,14 +1,16 @@
 <template>
   <header class="header">
     <div>
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
-
+      <g-link to="/">
+        <Logo :mode="modeHeader" class="nav__link" />
+      </g-link>
       <g-link class="nav__link" to="/about/">About</g-link>
       <g-link class="nav__link" to="/posts/">Posts</g-link>
     </div>
-    <!--<ClientOnly><ToggleTheme /></ClientOnly>-->
+
+    <ClientOnly>
+      <ToggleTheme @toggled="onClickChild" />
+    </ClientOnly>
   </header>
 </template>
 
@@ -22,11 +24,29 @@ query {
 
 <script>
 import ToggleTheme from "@/components/ToggleTheme";
+import Logo from "@/components/Logo.vue";
 
 export default {
   components: {
     ToggleTheme,
+    Logo
   },
+  data() {
+    return {
+      modeHeader: "light"
+    };
+  },
+  created() {
+    const mode = localStorage.getItem("theme");
+    if (mode) {
+      this.modeHeader = mode;
+    }
+  },
+  methods: {
+    onClickChild(value) {
+      this.modeHeader = value;
+    }
+  }
 };
 </script>
 
@@ -40,7 +60,9 @@ export default {
 }
 
 .nav__link {
-  margin-left: 20px;
+  margin-right: 20px;
+  display: inline-block;
+  font-variant: small-caps;
   &:hover {
     color: rgb(32, 201, 151);
     cursor: pointer;
