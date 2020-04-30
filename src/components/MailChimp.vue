@@ -54,10 +54,11 @@ export default {};
 @import "https://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css";
 
 #mc_embed_signup {
+  /* font-size: inherit; */
   margin-top: 1em;
   clear: left;
-  font: "Trebuchet MS", Verdana, "Verdana Ref", "Segoe UI", Candara,
-    "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  /* font: "Trebuchet MS", Verdana, "Verdana Ref", "Segoe UI", Candara,
+    "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; */
   width: 100%;
 }
 #mc_embed_signup label {

@@ -5,13 +5,14 @@
       v-for="tag in post.tags"
       :key="tag.id"
       :to="tag.path"
-    >{{ tag.title }}</g-link>
+      >{{ tag.title }}</g-link
+    >
   </div>
 </template>
 
 <script>
 export default {
-  props: ["post"]
+  props: ["post"],
 };
 </script>
 
@@ -22,9 +23,10 @@ export default {
   &__link {
     margin-right: 0.7em;
     font-size: 0.8em;
-    // color: #ffffff;
+
+    color: white;
     text-decoration: none;
-    background-color: green; // var(--bg-color);
+    background-color: var(--app-link-color); // var(--bg-color);
     // color: currentColor !important; //Todo: remove important;
     padding: 0.5em;
     border-radius: var(--radius);

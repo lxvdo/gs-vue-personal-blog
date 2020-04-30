@@ -42,7 +42,12 @@
         inkscape:window-y="0"
         inkscape:window-maximized="0"
       >
-        <inkscape:grid type="xygrid" id="grid8450" spacingx="0.13229167" spacingy="0.13229167" />
+        <inkscape:grid
+          type="xygrid"
+          id="grid8450"
+          spacingx="0.13229167"
+          spacingy="0.13229167"
+        />
       </sodipodi:namedview>
       <metadata id="metadata5">
         <rdf:RDF>
@@ -141,12 +146,8 @@
 
 <script>
 export default {
-  props: ["mode"]
+  props: ["mode"],
 };
 </script>
 
-<style lang="scss" scoped>
-// svg {
-//   display: inline-block;
-// }
-</style>
+<style lang="scss" scoped></style>

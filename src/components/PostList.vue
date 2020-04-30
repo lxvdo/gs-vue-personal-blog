@@ -3,7 +3,7 @@
     <!-- <hr class="line" />
     <p class="date" v-html="post.date" />-->
     <g-link :to="post.path" class="read">
-      <h1 class="title">{{ post.title }}</h1>
+      <h2 class="title">{{ post.title }}</h2>
       <p class="description">{{ post.description }}</p>
     </g-link>
     <div>
@@ -18,18 +18,18 @@ import PostTags from "~/components/PostTags";
 
 export default {
   components: {
-    PostTags
+    PostTags,
   },
-  props: ["post"]
+  props: ["post"],
 };
 </script>
 
 <style scoped>
 .tags {
-  /* z-index: 1; */
   display: inline-block;
-  margin-right: 2em;
+  margin-right: 1em;
   /* position: relative; */
   /* float: left; */
+  /* z-index: 1; */
 }
 </style>
