@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <Header />
     <div class="layout">
       <slot />
@@ -26,12 +26,12 @@ export default {
   --app-font-color: black;
   --app-link-color: var(--app-primary-color);
 }
-[theme="dark"] {
+[data-theme="dark"] {
   --app-background-color: #24292e; /* #0d2538;  #091a28*/
   --app-font-color: white;
   --app-link-color: var(--app-secondary-color);
 }
-[theme="sepia"] {
+[data-theme="sepia"] {
   --app-background-color: #f1e7d0;
   --app-font-color: #433422;
   --app-link-color: var(--app-primary-color);

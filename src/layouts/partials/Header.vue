@@ -2,7 +2,7 @@
   <header class="header">
     <div class="header__left">
       <g-link to="/">
-        <Logo :mode="modeHeader" />
+        <Logo :mode="theme" />
       </g-link>
       <g-link class="nav__link" to="/">START HERE</g-link>
       <g-link class="nav__link" to="/posts/">POSTS</g-link>
@@ -22,11 +22,11 @@
       <g-link class="nav__icon" to="https://github.com/lxvdo">
         <GithubIcon size="1x" />
       </g-link>
-      <g-link>
-        <ClientOnly>
-          <ToggleTheme @toggled="onClickChild" class="nav__theme" />
-        </ClientOnly>
-      </g-link>
+      <!-- <g-link>
+      <ClientOnly>-->
+      <ToggleTheme @toggled="onClickChild" class="nav__theme" />
+      <!-- </ClientOnly>
+      </g-link>-->
     </div>
   </header>
 </template>
@@ -60,18 +60,16 @@ export default {
   },
   data() {
     return {
-      modeHeader: "light"
+      theme: "light"
     };
   },
-  created() {
-    const mode = localStorage.getItem("theme");
-    if (mode) {
-      this.modeHeader = mode;
-    }
+  async mounted() {
+    // set default
+    if (typeof window.__theme !== "undefined") this.theme = window.__theme;
   },
   methods: {
     onClickChild(value) {
-      this.modeHeader = value;
+      this.theme = value;
     }
   }
 };
