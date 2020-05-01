@@ -22,11 +22,8 @@
       <g-link class="nav__icon" to="https://github.com/lxvdo">
         <GithubIcon size="1x" />
       </g-link>
-      <!-- <g-link>
-      <ClientOnly>-->
+
       <ToggleTheme @toggled="onClickChild" class="nav__theme" />
-      <!-- </ClientOnly>
-      </g-link>-->
     </div>
   </header>
 </template>

@@ -25,16 +25,12 @@ export default {
 <style scoped>
 .tags {
   display: inline;
-  /* margin: 0 1em 0 0; */
   font-size: 0.75em;
-  /* position: relative; */
-  /* float: left; */
-  /* z-index: 1; */
 }
-/* .description {
-  max-height: 4em;
-  white-space: nowrap;
-  overflow-y: hidden;
-  text-overflow: ellipsis;
-} */
+.title {
+  margin-bottom: 0.4em;
+}
+.description {
+  margin-top: 0;
+}
 </style>

@@ -6,11 +6,13 @@
     </div>
     <g-image v-if="$page.post.image" :src="$page.post.image"></g-image>
     <div class="post-content" v-html="$page.post.content" />
-    <button
+    <!-- <button
+      class="button"
       :style="{ visibility: showComments ? 'hidden' : 'visible' }"
       v-on:click="showComments = true"
     >Load comments</button>
-    <div class="post-comments" v-if="showComments">
+    <div class="post-comments" v-if="showComments">-->
+    <div class="post-comments">
       <vue-disqus shortname="lxvdo" :identifier="$page.post.title"></vue-disqus>
     </div>
   </Layout>
@@ -60,5 +62,8 @@ export default {
       transition: 0.4s;
     }
   }
+}
+.post-comments {
+  margin-top: 3em;
 }
 </style>

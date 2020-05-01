@@ -73,7 +73,7 @@ a {
 }
 a:hover {
   color: var(--app-link-color);
-  transition: 0.4s;
+  transition: 0.2s;
 }
 
 img {
