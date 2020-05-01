@@ -21,7 +21,7 @@ export default {
 
 <page-query>
 query {
-  allPost(filter: { draft: { ne: true}}) {
+  allPost(filter: { published: { eq: true}}) {
     totalCount
     edges {
       node {
@@ -30,13 +30,14 @@ query {
         timeToRead
         description
         path
+        content
         date (format: "D MMMM YYYY")
         tags(sortBy: "title", order: ASC) {
           id
           title
           path
         }
-        image (width: 770, height: 380, blur: 10)
+        image (width: 760)
       }
     }
   }

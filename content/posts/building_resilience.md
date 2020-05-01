@@ -1,9 +1,9 @@
 ---
 title: "The best things you could be doing in a crisis"
-description: "I guess you are expecting to read my first post here. Have a little patience:)"
+description: "It’s strange how life can change in a matter of days. From exploring the other side of the world to finding myself back in the country and home I grew up in. I’m not sad. I don't need to be. It’s the best place I can be at this moment. I’m grateful for the means and services we have here to fulfil our basic needs, "
 date: 2020-04-12
 tags: ["Life", "Personal development"]
-draft: false
+published: true
 image: ./images/P9051799.jpg
 ---
 

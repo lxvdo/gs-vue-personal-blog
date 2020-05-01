@@ -1,7 +1,6 @@
 <template>
   <Layout>
-    <h1 class="tag-title text-center space-bottom"># {{ $page.tag.title }}</h1>
-
+    <h1 class="tag-title">#{{ $page.tag.title }}</h1>
     <div class="posts">
       <PostList v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :post="edge.node" />
     </div>
@@ -12,8 +11,9 @@
 query Tag ($id: ID!) {
   tag (id: $id) {
     title
+    id 
     belongsTo {
-      edges {
+      edges  {
         node {
           ...on Post {
             title
@@ -22,6 +22,11 @@ query Tag ($id: ID!) {
             timeToRead
             description
             content
+            tags(sortBy: "title", order: ASC) {
+              id
+              title
+              path
+            }
           }
         }
       }

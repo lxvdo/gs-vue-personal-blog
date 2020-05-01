@@ -6,25 +6,25 @@
       </g-link>
       <g-link class="nav__link" to="/">START HERE</g-link>
       <g-link class="nav__link" to="/posts/">POSTS</g-link>
-      <g-link class="nav__link" to="/projects/">PROJECTS</g-link>
+      <!-- <g-link class="nav__link" to="/projects/">PROJECTS</g-link> -->
     </div>
     <nav class="header__item"></nav>
     <div class="header__right">
-      <g-link class="nav__icon" to="mailto:alex@lxvdo.com"
-        ><MailIcon size="1x"
-      /></g-link>
-      <g-link class="nav__icon" to="https://www.linkedin.com/in/avdomburg/"
-        ><LinkedinIcon size="1x"
-      /></g-link>
-      <g-link class="nav__icon" to="https://www.instagram.com/lxvdo/"
-        ><InstagramIcon size="1x"
-      /></g-link>
-      <g-link class="nav__icon" to="https://github.com/lxvdo"
-        ><GithubIcon size="1x"
-      /></g-link>
+      <g-link class="nav__icon" to="mailto:alex@lxvdo.com">
+        <MailIcon size="1x" />
+      </g-link>
+      <g-link class="nav__icon" to="https://www.linkedin.com/in/avdomburg/">
+        <LinkedinIcon size="1x" />
+      </g-link>
+      <g-link class="nav__icon" to="https://www.instagram.com/lxvdo/">
+        <InstagramIcon size="1x" />
+      </g-link>
+      <g-link class="nav__icon" to="https://github.com/lxvdo">
+        <GithubIcon size="1x" />
+      </g-link>
       <g-link>
         <ClientOnly>
-          <ToggleTheme @toggled="onClickChild" class="nav__icon" />
+          <ToggleTheme @toggled="onClickChild" class="nav__theme" />
         </ClientOnly>
       </g-link>
     </div>
@@ -46,7 +46,7 @@ import {
   MailIcon,
   LinkedinIcon,
   InstagramIcon,
-  GithubIcon,
+  GithubIcon
 } from "vue-feather-icons";
 
 export default {
@@ -56,11 +56,11 @@ export default {
     MailIcon,
     LinkedinIcon,
     InstagramIcon,
-    GithubIcon,
+    GithubIcon
   },
   data() {
     return {
-      modeHeader: "light",
+      modeHeader: "light"
     };
   },
   created() {
@@ -72,8 +72,8 @@ export default {
   methods: {
     onClickChild(value) {
       this.modeHeader = value;
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -83,7 +83,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 10px;
 
   &__left {
     display: flex;
@@ -98,54 +98,22 @@ export default {
 .nav__link {
   margin: 0 0 0 1em;
   color: var(--app-font-color);
-  // font-weight: 400;
-
-  // text-decoration: none;
   float: left;
-  // vertical-align: middle;
-  // display: inline-block;
-  // &:hover {
-  //   color: rgb(32, 201, 151);
-  //   cursor: pointer;
-  //   transition: 0.4s ease all;
-  // }
-  //   &__icon {
-  //     // position: relative;
-  //     // top: 2px;
-  //     margin-right: 0.7em;
-  //     float: right;
-  //     // &:hover {
-  //     //   color: rgb(32, 201, 151);
-  //     //   cursor: pointer;
-  //     //   transition: 0.4s ease all;
-  //     // }
-  //   }
 }
 
 .nav__icon {
   margin-left: 1em;
   color: var(--app-font-color);
-  // text-decoration: none;
   float: left;
-  // display: inline-block;
-  // &:hover {
-  //   color: rgb(32, 201, 151);
-  //   cursor: pointer;
-  //   transition: 0.4s ease all;
-  // }
-  //   &__icon {
-  //     // position: relative;
-  //     // top: 2px;
-  //     margin-right: 0.7em;
-  //     float: right;
-  //     // &:hover {
-  //     //   color: rgb(32, 201, 151);
-  //     //   cursor: pointer;
-  //     //   transition: 0.4s ease all;
-  //     // }
-  //   }
 }
-.nav__icon > svg {
-  float: right;
+
+@media only screen and (max-width: 600px) {
+  .nav__icon {
+    display: none;
+  }
+}
+.nav__theme {
+  float: left;
+  margin-left: 1em;
 }
 </style>

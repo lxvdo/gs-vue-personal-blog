@@ -3,7 +3,7 @@ title: "Embracing Uncertainty; Ten Months On The Road"
 description: "I guess you are expecting to read my first post here. Have a little patience:)"
 date: 2020-03-08
 tags: ["Travel", "Life", "Personal development"]
-draft: false
+published: true
 ---
 
 ![](https://lh3.googleusercontent.com/fAOXo2f6G1yNxKRnHyANeWFd1g8iY5nLiOTRsAM0oDV7gcCkwMLtgj0VbM6pGBkhJvVHltt8p_OyEC81Dwl42TJwAO2KCV5rlS496Ew1Toiw07dNN-TyxAwP8gZSLOsBvpzbJzKYoQs4Xw6v_RL9LzPzbh8Rl4QalJPeI6I6yseG4UqlMzeGsCsj7okj5FkDg3ZJL3erq2YI0p215g9pARU6_DzrVdJYhUo0J3DESZPQALaN1FomY1_ftV9ShkKdIIPghoBUtPV5YtIxHhnpTUjsAmuNNr17n0GelXPdaslAF-9GhiHNO7W8z0Rap5hEJ_tRN_1dIMpfF7GO1u8JRhCpwkbyQWBH-hEUFRfBtWcXMp2YOdCAt8EPXpZwCK7pbb9qwK9nKq8AfHTUOYephi-8qq2SwKXS2u3dymeuKGdqQyhwjUZ8136kbSW5Z6Mh2WyH3WKS1MELhjzoOEFCcvy1QlJ2l5rF4JvE4FsOdg1_8vFMT84-Jot-wco7ackatEK17DcgICE9SlXxU_yvjkbQOtHtk7p4sior9pQaQlDZKDXAb3U8pxkvrssh-xy3way66MCkjyc9BOgJwX8UJ9D17n6-PTbM8a75Tf9udMGag9K1ElpjAc--GiRrfBsT4eRELGD_lWXIcb7LBexitMAi3JhSC9octP0bMZBcv5Cz9oTxvb-7hfBiDd2HolSqJxlb8MdrBoXKVtr4_5t5yJ5hsETxvR_2Pnl7XG0jZwYPfnI=w1064-h390-no)

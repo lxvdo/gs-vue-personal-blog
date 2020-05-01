@@ -10,9 +10,7 @@
       <a
         href="https://www.80000hours.org/articles/extinction-risk/"
         class="text-link"
-      >
-        largest existential threats
-      </a>
+      >largest existential threats</a>
       .
     </p>
     <p>
@@ -32,9 +30,7 @@
     <ul>
       <li>How do we think and act?</li>
       <li>How are modern culture and technologies influencing us?</li>
-      <li>
-        How can we rebalance the global system and aim for true sustainability?
-      </li>
+      <li>How can we rebalance the global system and aim for true sustainability?</li>
     </ul>
     <MailChimp />
   </Layout>
@@ -45,19 +41,15 @@ import MailChimp from "@/components/MailChimp.vue";
 
 export default {
   components: {
-    MailChimp,
+    MailChimp
   },
   metaInfo: {
-    title: "Hello, world!",
-  },
+    title: "Hello, world!"
+  }
 };
 </script>
 
 <style lang="scss" scoped>
-.front-title {
-  text-align: center;
-}
-
 .text-link {
   text-decoration: underline;
   text-decoration-color: var(--app-link-color);

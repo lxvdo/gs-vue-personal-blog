@@ -2,18 +2,14 @@
   <Layout>
     <div class="post-title">
       <h1>{{ $page.post.title }}</h1>
-      <p class="post-date">
-        {{ $page.post.date }} &bull; {{ $page.post.timeToRead }} min read
-      </p>
+      <p class="post-date">{{ $page.post.date }} &bull; {{ $page.post.timeToRead }} min read</p>
     </div>
     <g-image v-if="$page.post.image" :src="$page.post.image"></g-image>
     <div class="post-content" v-html="$page.post.content" />
     <button
       :style="{ visibility: showComments ? 'hidden' : 'visible' }"
       v-on:click="showComments = true"
-    >
-      Load comments
-    </button>
+    >Load comments</button>
     <div class="post-comments" v-if="showComments">
       <vue-disqus shortname="lxvdo" :identifier="$page.post.title"></vue-disqus>
     </div>
@@ -41,24 +37,18 @@ query Post ($path: String!) {
 export default {
   data() {
     return {
-      showComments: false,
+      showComments: false
     };
-  },
+  }
 };
 </script>
 
 <style lang="scss">
-.post-title {
-  text-align: center;
-  // font-size: 30px;
-  /* line-height: 10px; */
-  /* padding: 2em 0; */
-  // font-family: "Stylish";
-}
 .post-date {
+  text-align: center;
   font-size: 0.7em;
-  // margin: 0px;
 }
+
 .post-content {
   a {
     text-decoration: underline;
