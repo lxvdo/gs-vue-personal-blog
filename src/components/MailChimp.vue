@@ -1,10 +1,7 @@
 <template>
   <!-- Begin Mailchimp Signup Form -->
   <div id="mc_embed_signup">
-    <p>
-      Do you want to receive updates on new posts?
-      <br />Signup here:
-    </p>
+    <p>Do you want to get new articles delivered straight to you? Then signup here:</p>
     <form
       action="https://lxvdo.us20.list-manage.com/subscribe/post?u=e93f9ba0c5e810f3e12b0a3ad&amp;id=ef147bea44"
       method="post"
@@ -49,7 +46,7 @@
         <div class="clear">
           <input
             type="submit"
-            value="Subscribe"
+            value="Sign me up!"
             name="subscribe"
             id="mc-embedded-subscribe"
             class="button"

@@ -16,7 +16,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang='scss'>
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap");
 
 :root {
@@ -74,6 +74,17 @@ a {
 a:hover {
   color: var(--app-link-color);
   transition: 0.2s;
+}
+
+.text-link {
+  text-decoration: underline;
+  text-decoration-color: var(--app-link-color);
+  text-decoration-skip: objects;
+  color: var(--app-link-color);
+  &:hover {
+    opacity: 0.8;
+    transition: 0.4s;
+  }
 }
 
 img {

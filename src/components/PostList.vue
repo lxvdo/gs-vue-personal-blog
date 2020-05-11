@@ -23,6 +23,9 @@ export default {
 </script>
 
 <style scoped>
+.post-list {
+  margin-top: 2em;
+}
 .tags {
   display: inline;
   font-size: 0.75em;
