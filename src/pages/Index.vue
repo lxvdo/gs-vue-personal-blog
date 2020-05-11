@@ -19,9 +19,7 @@
       </li>
     </ul>
 
-    <p>
-      <b>Insert more text</b>
-    </p>
+    <p>Using writing and coding projects I dive into my own relationship with technology and question my own beliefs in pursuit of truth. I go from personal experience and lessons from wise people that I've encountered along the way.</p>
     <MailChimp />
   </Layout>
 </template>

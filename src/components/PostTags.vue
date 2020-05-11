@@ -1,6 +1,7 @@
 <template>
   <div>
     <g-link class="post-tags" v-for="tag in post.tags" :key="tag.id" :to="tag.path">{{ tag.title }}</g-link>
+    <!-- <p class="post-tags" v-for="tag in post.tags" :key="tag.id">{{ tag.title }}</p> -->
   </div>
 </template>
 
@@ -20,8 +21,8 @@ export default {
   text-decoration: none;
   background-color: var(--app-primary-color); // var(--bg-color);
   // color: currentColor !important; //Todo: remove important;
-  padding: 0.5em;
-  border-radius: var(--radius);
+  padding: 0.3em 0.5em;
+  border-radius: 0.3em;
   &:hover {
     color: white;
   }

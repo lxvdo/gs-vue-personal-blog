@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style lang='scss'>
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Raleway&display=swap");
 
 :root {
   --app-primary-color: #00793c;
@@ -40,10 +40,10 @@ export default {
 body {
   background-color: var(--app-background-color);
   color: var(--app-font-color);
-  font-family: "Raleway", -apple-system, system-ui, BlinkMacSystemFont,
+  font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
     sans-serif;
   line-height: 1.6;
-  font-size: 1.25em;
+  font-size: 1.22em;
 }
 
 .layout {
@@ -58,7 +58,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont,
+  font-family: "Raleway", -apple-system, system-ui, BlinkMacSystemFont,
     sans-serif;
   line-height: 1.4;
 }
