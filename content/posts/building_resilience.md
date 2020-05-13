@@ -1,14 +1,11 @@
 ---
 title: "The best things you could be doing in a crisis"
-description: "It’s strange how life can change in a matter of days. From exploring the other side of the world to finding myself back in the country and home I grew up in. I’m not sad. I don't need to be. It’s the best place I can be at this moment. I’m grateful for the means and services we have here to fulfil our basic needs, "
+description: "The world is changing and uncertainty is becoming more apparent to us. How can you cope with it all and come out even stronger?"
 date: 2020-04-12
 tags: ["Life", "Personal development"]
 published: true
 image: ./images/P9051799.jpg
 ---
-
-<!-- ![test](https://lh3.googleusercontent.com/PsBXhwqVdGgijxfv3cj8Jy7NUBB-BE_MMwjb_SOIx5MCUl7hWtbiec0-kdixfXWaRbibr0upvTzBrLEl9dwWI3biVA8XGLT-U7wtrLTj4Enwk7cpBCk2Fsa1q6JJFkAgV8sQN5-FokxOb4Gqp0r-oDg3qqIc9UPsUa9ONzKzrbCSiIEeuoRUj3IimLn5rZkALVc0z7yAgOPwa5X0miBouAwKSjG2WlNJlzfAyIMebPSzK6xhkIkKxHr6cEF3HRGt1juCNbPA9TQPi6N2-6aqJW_Z5uapnKrA3ovzDb5bwTyuuaBGG7DJIYZME392QnkXZIKJDcQgqkbNtzxaeBK-8fomQZ-IRl3Ombz3WhRij3KaaEKkVSCikPc5Q2kGwjfb2v2_m2rcf8yI8kNIW1RKCIO63S65_l7L4NBTe2f43CVH4VFwioQpMdDug9-IIePfH6ljWgwnSAI0CF8tyflB9jUB2rUtxapwS3HBHRdU3S2ZKh_tRs_3gOiqk_rmyOJOna98jeTjM6xC_IooL4hgs1FSqRjF-McThCmNy1KwQvMkDRuREkX9Lb8LM6jaT5VSEbPSQ1q28vBYdX5MhwIihXkpI6OEMuU9T3kundusO8MRuJEmkLpJ-fE9SYmW1t0FcWlcbSbLA6Z2AbNZyydzRweQSIGU0EyLgValZButajmBNKi5FTJmMFBWXpNW=w2307-h1297-no) -->
-<!-- ./images/P9051799.JPG -->
 
 It’s strange how life can change in a matter of days. From exploring the other side of the world to finding myself back in the country and home I grew up in. I’m not sad. I don't need to be. It’s the best place I can be at this moment. I’m grateful for the means and services we have here to fulfil our basic needs, even during a global crisis.
 

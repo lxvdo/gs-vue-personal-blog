@@ -4,14 +4,19 @@
     <div class="layout">
       <slot />
     </div>
+    <footer>
+      <socials class="socials" />
+    </footer>
   </div>
 </template>
 
 <script>
 import Header from "./partials/Header.vue";
+import Socials from "./partials/Socials.vue";
 export default {
   components: {
-    Header
+    Header,
+    Socials
   }
 };
 </script>
@@ -94,6 +99,14 @@ img {
   margin-right: auto;
 }
 
+.socials {
+  display: none;
+  max-width: 200px;
+  justify-content: space-between;
+  margin: 0.5em auto 1em auto;
+  font-size: 1.22em;
+}
+
 @media only screen and (max-width: 600px) {
   body {
     /* line-height: 1.5; */
@@ -101,6 +114,9 @@ img {
   }
   .layout {
     padding: 0px 1em 1em 1em;
+  }
+  .socials {
+    display: flex;
   }
 }
 </style>

@@ -3,8 +3,9 @@
     <g-image src="@/assets/IMG_20191128_163431_529.jpg"></g-image>
     <h1 class="front-title">Hi &ndash; I'm Alex van Domburg</h1>
     <p>
-      I question, write and build stuff for a brighter future. On this website I explore what it means
-      to be human in this day and age. I focus on three topics:
+      I question, write and build stuff for a brighter future. On this website I
+      explore what it means to be human in this day and age. I focus on three
+      topics:
     </p>
 
     <ul>
@@ -12,14 +13,20 @@
         <b>Technology:</b> How does modern technology impact our lives?
       </li>
       <li>
-        <b>Brain:</b> How do we think, believe and choose?
+        <b>Mind:</b> How do we learn, believe and decide?
       </li>
       <li>
-        <b>Sustainability:</b> What does real sustainability look like and how do you get there?
+        <b>Sustainability:</b> What does real sustainability look like and how
+        do you get there?
       </li>
     </ul>
 
-    <p>Using writing and coding projects I dive into my own relationship with technology and question my own beliefs in pursuit of truth. I go from personal experience and lessons from wise people that I've encountered along the way.</p>
+    <p>
+      Using writing and coding projects I dive into my own relationship with
+      technology and question my own beliefs in pursuit of a higher truth. I go from
+      personal experience and lessons from wise people that I've encountered
+      along the way.
+    </p>
     <MailChimp />
   </Layout>
 </template>

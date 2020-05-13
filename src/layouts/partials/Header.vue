@@ -8,21 +8,8 @@
       <g-link class="nav__link" to="/posts/">POSTS</g-link>
       <!-- <g-link class="nav__link" to="/projects/">PROJECTS</g-link> -->
     </div>
-    <nav class="header__item"></nav>
     <div class="header__right">
-      <g-link class="nav__icon" to="mailto:alex@lxvdo.com">
-        <MailIcon size="1x" />
-      </g-link>
-      <g-link class="nav__icon" to="https://www.linkedin.com/in/avdomburg/">
-        <LinkedinIcon size="1x" />
-      </g-link>
-      <g-link class="nav__icon" to="https://www.instagram.com/lxvdo/">
-        <InstagramIcon size="1x" />
-      </g-link>
-      <g-link class="nav__icon" to="https://github.com/lxvdo">
-        <GithubIcon size="1x" />
-      </g-link>
-
+      <Socials class="header__socials" />
       <ToggleTheme @toggled="onClickChild" class="nav__theme" />
     </div>
   </header>
@@ -39,21 +26,13 @@ query {
 <script>
 import ToggleTheme from "@/components/ToggleTheme";
 import Logo from "@/components/Logo.vue";
-import {
-  MailIcon,
-  LinkedinIcon,
-  InstagramIcon,
-  GithubIcon
-} from "vue-feather-icons";
+import Socials from "@/layouts/partials/Socials.vue";
 
 export default {
   components: {
     ToggleTheme,
     Logo,
-    MailIcon,
-    LinkedinIcon,
-    InstagramIcon,
-    GithubIcon
+    Socials
   },
   data() {
     return {
@@ -79,6 +58,7 @@ export default {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
+  vertical-align: 3em;
 
   &__left {
     display: flex;
@@ -86,29 +66,28 @@ export default {
     align-items: center;
   }
   &__right {
+    display: flex;
     float: right;
+    margin-top: 5px;
+  }
+  &__socials {
+    display: flex;
+    width: 7em;
+    justify-content: space-between;
   }
 }
 
 .nav__link {
-  margin: 0 0 0 1em;
-  color: var(--app-font-color);
-  float: left;
+  margin-left: 1em;
 }
 
-.nav__icon {
+.nav__theme {
   margin-left: 1em;
-  color: var(--app-font-color);
-  float: left;
 }
 
 @media only screen and (max-width: 600px) {
-  .nav__icon {
+  .header__socials {
     display: none;
   }
-}
-.nav__theme {
-  float: left;
-  margin-left: 1em;
 }
 </style>
