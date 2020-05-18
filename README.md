@@ -1,14 +1,7 @@
-# Default starter for Gridsome
+# LXVDO
 
-This is the project you get when you run `gridsome create new-project`.
+## Blog by Alex van Domburg
 
-### 1. Install Gridsome CLI tool if you don't have
+On this blog I display some of my writing and coding projects.
 
-`npm install --global @gridsome/cli`
-
-### 2. Create a Gridsome project
-
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+I built it using [Vue.js](https://www.vuejs.org) and [Gridsome](https://www.gridsome.org), and host it on [Netlify](https://www.netlify.com).

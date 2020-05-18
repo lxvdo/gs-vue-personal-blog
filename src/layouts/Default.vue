@@ -4,8 +4,9 @@
     <div class="layout">
       <slot />
     </div>
-    <footer>
+    <footer id="foot">
       <socials class="socials" />
+      <p id="copyright">©{{year}} Alex van Domburg</p>
     </footer>
   </div>
 </template>
@@ -17,6 +18,11 @@ export default {
   components: {
     Header,
     Socials
+  },
+  data() {
+    return {
+      year: new Date().getFullYear()
+    };
   }
 };
 </script>
@@ -49,12 +55,28 @@ body {
     sans-serif;
   line-height: 1.6;
   font-size: 1.22em;
+  margin: 0;
+  padding: 0;
+  height: 100%; // footer test
+}
+
+#app {
+  min-height: 100vh; // footer test
+  position: relative; // footer test
 }
 
 .layout {
   max-width: 760px;
   margin: 0 auto;
-  padding: 0px 20px 60px 20px;
+  padding: 0px 20px 80px 20px;
+}
+
+#foot {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  vertical-align: text-bottom;
 }
 
 h1,
@@ -103,8 +125,15 @@ img {
   display: none;
   max-width: 200px;
   justify-content: space-between;
-  margin: 0.5em auto 1em auto;
+  margin: 1em auto 0 auto;
   font-size: 1.22em;
+}
+
+#copyright {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 0.8em;
+  margin-top: 0.5em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -113,7 +142,10 @@ img {
     font-size: 1em;
   }
   .layout {
-    padding: 0px 1em 1em 1em;
+    padding: 0px 1em 80px 1em;
+  }
+  #copyright {
+    padding-top: 0px;
   }
   .socials {
     display: flex;

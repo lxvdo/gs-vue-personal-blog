@@ -31,6 +31,12 @@ module.exports = {
     {
       use: "gridsome-plugin-disqus",
     },
+    {
+      use: "@gridsome/plugin-google-analytics",
+      options: {
+        id: "UA-116832031-1",
+      },
+    },
   ],
   transformers: {
     //Add markdown support to all file-system sources
