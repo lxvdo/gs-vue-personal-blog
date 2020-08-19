@@ -6,15 +6,17 @@
     </div>
     <g-image v-if="$page.post.image" :src="$page.post.image"></g-image>
     <div class="post-content" v-html="$page.post.content" />
+    <hr />
+    <MailChimp />
     <!-- <button
       class="button"
       :style="{ visibility: showComments ? 'hidden' : 'visible' }"
       v-on:click="showComments = true"
     >Load comments</button>
-    <div class="post-comments" v-if="showComments">-->
+    <div class="post-comments" v-if="showComments">
     <div class="post-comments">
       <vue-disqus shortname="lxvdo" :identifier="$page.post.title"></vue-disqus>
-    </div>
+    </div>-->
   </Layout>
 </template>
 
@@ -26,6 +28,7 @@ query Post ($path: String!) {
     content
     date (format: "D MMMM YYYY")
     timeToRead
+    description
     tags {
           id
           title
@@ -36,12 +39,40 @@ query Post ($path: String!) {
 </page-query>
 
 <script>
+import MailChimp from "@/components/MailChimp.vue";
+
 export default {
+  components: {
+    MailChimp,
+  },
   data() {
     return {
-      showComments: false
+      showComments: false,
     };
-  }
+  },
+  metaInfo() {
+    return {
+      title: this.$page.post.title,
+      meta: [
+        {
+          name: "description",
+          content: this.$page.post.description,
+        },
+        {
+          property: "og:title",
+          content: this.$page.post.title,
+        },
+        {
+          property: "og:description",
+          content: this.$page.post.description,
+        },
+        {
+          property: "og:image",
+          content: this.$page.post.image || "",
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -62,6 +93,10 @@ export default {
       transition: 0.4s;
     }
   }
+}
+noscript + em {
+  text-align: center;
+  font-size: 0.7em;
 }
 .post-comments {
   margin-top: 3em;

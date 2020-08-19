@@ -17,13 +17,13 @@
       </li>
       <li>
         <b>Sustainability:</b> What does real sustainability look like and how
-        do you get there?
+        do we get there?
       </li>
     </ul>
 
     <p>
       Using writing and coding projects I dive into my own relationship with
-      technology and question my own beliefs in pursuit of a higher truth. I go from
+      technology and question my own beliefs in pursuit of a truer truth. I go from
       personal experience and lessons from wise people that I've encountered
       along the way.
     </p>
@@ -36,11 +36,11 @@ import MailChimp from "@/components/MailChimp.vue";
 
 export default {
   components: {
-    MailChimp
+    MailChimp,
   },
   metaInfo: {
-    title: "Hi!"
-  }
+    title: "Hi!",
+  },
 };
 </script>
 
