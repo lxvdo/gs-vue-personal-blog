@@ -2,9 +2,9 @@
 title: "When you should commit to something"
 description: "In a world of possibilities, how do you choose between the focus of commitment and the exploration of curiosity?"
 date: 2020-08-19
-tags: ["Life", "Personal development"]
+tags: ["Decision-making", "Life", "Personal development"]
 published: true
-image: ./images/P5070064.jpg
+image: ./images/lines.jpg
 ---
 
 Choices are hard. You might think to have too few options, with a lot of things seeming to be out of your league. However, more often than not you have too many options to choose from. You’ve probably been told that you can do (almost) anything. But that doesn’t mean you can do everything. You can only spend your time once. In a world of possibilities, how do you choose?
@@ -98,4 +98,4 @@ And I’m committing to nurturing connections. To relationships that give color 
 
 For the foreseeable future I’m publishing at least one piece of content a week. I’ll be dabbling in different topics along the way. Some pieces will be bad, some okay and some might even be good. That’s all part of the process, the pains of growing.
 
-Let’s start walking.
+Let’s get going.
