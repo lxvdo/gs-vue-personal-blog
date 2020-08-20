@@ -17,18 +17,18 @@ import Socials from "./partials/Socials.vue";
 export default {
   components: {
     Header,
-    Socials
+    Socials,
   },
   data() {
     return {
-      year: new Date().getFullYear()
+      year: new Date().getFullYear(),
     };
-  }
+  },
 };
 </script>
 
 <style lang='scss'>
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Serif+Pro&family=Open+Sans&family=Raleway&display=swap");
 
 :root {
   --app-primary-color: #00793c;
@@ -51,8 +51,8 @@ export default {
 body {
   background-color: var(--app-background-color);
   color: var(--app-font-color);
-  font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
-    sans-serif;
+  font-family: "Source Serif Pro", -apple-system, system-ui, BlinkMacSystemFont,
+    serif;
   line-height: 1.6;
   font-size: 1.22em;
   margin: 0;

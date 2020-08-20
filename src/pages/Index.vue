@@ -39,7 +39,7 @@ export default {
     MailChimp,
   },
   metaInfo: {
-    title: "Hi!",
+    title: "Meditations on sustainability, technology and the mind",
   },
 };
 </script>

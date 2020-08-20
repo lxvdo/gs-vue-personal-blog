@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: "LXVDO | Alex van Domburg",
-  siteDescription: "Alex van Domburg, A simple blog designed with Gridsome",
+  siteDescription: "Alex van Domburg - Meditations on sustainability, technology and the mind",
   icon: "src/assets/site_icon.png",
   templates: {
     Tag: "/tag/:id",

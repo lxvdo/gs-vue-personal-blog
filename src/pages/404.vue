@@ -8,5 +8,13 @@
   </Layout>
 </template>
 
+<script>
+export default {
+  metaInfo: {
+    title: "Oops, page not found",
+  },
+};
+</script>
+
 <style lang="scss">
 </style>

@@ -32,11 +32,11 @@ export default {
   components: {
     ToggleTheme,
     Logo,
-    Socials
+    Socials,
   },
   data() {
     return {
-      theme: "light"
+      theme: "light",
     };
   },
   async mounted() {
@@ -46,8 +46,8 @@ export default {
   methods: {
     onClickChild(value) {
       this.theme = value;
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -59,6 +59,8 @@ export default {
   justify-content: space-between;
   padding: 10px;
   vertical-align: 3em;
+  font-family: "Raleway", -apple-system, system-ui, BlinkMacSystemFont,
+    sans-serif;
 
   &__left {
     display: flex;

@@ -41,11 +41,27 @@ import PostList from "~/components/PostList.vue";
 
 export default {
   components: {
-    PostList
+    PostList,
   },
-  metaInfo: {
-    title: "Hello, world!"
-  }
+  metaInfo() {
+    return {
+      title: "Tagged as " + this.$page.tag.title,
+      meta: [
+        {
+          name: "description",
+          content: "Posts tagged as " + this.$page.tag.title,
+        },
+        {
+          property: "og:title",
+          content: "Tagged as " + this.$page.tag.title,
+        },
+        {
+          property: "og:description",
+          content: "Posts tagged as " + this.$page.tag.title,
+        },
+      ],
+    };
+  },
 };
 </script>
 
