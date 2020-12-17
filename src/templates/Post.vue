@@ -2,12 +2,14 @@
   <Layout>
     <div class="post-title">
       <h1>{{ $page.post.title }}</h1>
-      <p class="post-date">{{ $page.post.date }} &bull; {{ $page.post.timeToRead }} min read</p>
+      <p class="post-date">
+        {{ $page.post.date }} &bull; {{ $page.post.timeToRead }} min read
+      </p>
     </div>
     <g-image v-if="$page.post.image" :src="$page.post.image"></g-image>
     <div class="post-content" v-html="$page.post.content" />
     <hr />
-    <MailChimp />
+    <Substack />
     <!-- <button
       class="button"
       :style="{ visibility: showComments ? 'hidden' : 'visible' }"
@@ -39,11 +41,11 @@ query Post ($path: String!) {
 </page-query>
 
 <script>
-import MailChimp from "@/components/MailChimp.vue";
+import Substack from "@/components/Substack.vue";
 
 export default {
   components: {
-    MailChimp,
+    Substack,
   },
   data() {
     return {

@@ -6,7 +6,7 @@
     </div>
     <footer id="foot">
       <socials class="socials" />
-      <p id="copyright">©{{year}} Alex van Domburg</p>
+      <p id="copyright">©{{ year }} Alex van Domburg</p>
     </footer>
   </div>
 </template>
@@ -114,7 +114,8 @@ a:hover {
   }
 }
 
-img {
+img,
+iframe {
   display: block;
   max-width: 100%;
   margin-left: auto;

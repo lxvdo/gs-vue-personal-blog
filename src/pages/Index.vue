@@ -9,12 +9,8 @@
     </p>
 
     <ul>
-      <li>
-        <b>Technology:</b> How does modern technology impact our lives?
-      </li>
-      <li>
-        <b>Mind:</b> How do we learn, believe and decide?
-      </li>
+      <li><b>Technology:</b> How does modern technology impact our lives?</li>
+      <li><b>Mind:</b> How do we learn, believe and decide?</li>
       <li>
         <b>Sustainability:</b> What does real sustainability look like and how
         do we get there?
@@ -23,20 +19,20 @@
 
     <p>
       Using writing and coding projects I dive into my own relationship with
-      technology and question my own beliefs in pursuit of a truer truth. I go from
-      personal experience and lessons from wise people that I've encountered
-      along the way.
+      technology and question my own beliefs in pursuit of a truer truth. I go
+      from personal experience and lessons from wise people that I've
+      encountered along the way.
     </p>
-    <MailChimp />
+    <Substack />
   </Layout>
 </template>
 
 <script>
-import MailChimp from "@/components/MailChimp.vue";
+import Substack from "@/components/Substack.vue";
 
 export default {
   components: {
-    MailChimp,
+    Substack,
   },
   metaInfo: {
     title: "Meditations on sustainability, technology and the mind",
